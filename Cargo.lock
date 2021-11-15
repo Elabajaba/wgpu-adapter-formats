@@ -419,6 +419,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "pico-args"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "db8bcd96cb740d03149cbad5518db9fd87126a10ab519c011893b1754134c468"
+
+[[package]]
 name = "pollster"
 version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -727,6 +733,7 @@ dependencies = [
 name = "wgpu-test"
 version = "0.1.0"
 dependencies = [
+ "pico-args",
  "pollster",
  "wgpu",
 ]

@@ -1,0 +1,1 @@
+To run on an iGPU, run with `cargo run -- -i true`. Otherwise, run it with `cargo run` or `cargo run -- -i false`
