@@ -4,7 +4,10 @@ fn main() {
 
 async fn run() {
     let adapter = wgpu::Instance::new(wgpu::Backends::DX12)
-        .request_adapter(&wgpu::RequestAdapterOptions::default())
+        .request_adapter(&wgpu::RequestAdapterOptions {
+            power_preference: wgpu::PowerPreference::HighPerformance,
+            ..Default::default()
+        })
         .await
         .unwrap();
 
