@@ -14,6 +14,8 @@ struct AppArgs {
 }
 
 fn main() {
+    env_logger::init();
+
     let args = match parse_args() {
         Ok(v) => v,
         Err(e) => {
