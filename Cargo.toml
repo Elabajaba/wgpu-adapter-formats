@@ -9,4 +9,7 @@ edition = "2021"
 env_logger = "0.9.0"
 pico-args = "0.4.2"
 pollster = "0.2.4"
-wgpu = "0.11.0"
+wgpu = "0.11"
+
+[patch.crates-io]
+wgpu = { git = "https://github.com/gfx-rs/wgpu.git", branch = "master" }
